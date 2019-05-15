@@ -1,71 +1,12 @@
-# DevOps Tutorial Application (In progress)
+# DevOps Tutorial Application
 
-[DevOps](https://en.wikipedia.org/wiki/DevOps) promises to improve both development and operational efficiencies while enhancing partnership with customers.
-More than doing the same things faster, DevOps relies on establishing a good delivery pipeline spanning from ideation to monitoring.
-The DevOps Tutorial Application Project can get you started. It will create a new project in IBM DevOps, build it using the latest tools, deploy it to IBM Bluemix, and lay the foundation for test, scale and operations.
+This application is a simple Node.js [Express 4](http://expressjs.com/) sample that you can extend. This sample code is used in a [tutorial](https://method.mybluemix.net/devops/method/tutorials/tutorial_automated) that explains how to configure a toolchain to use for cloud native development in DevOps Services and Bluemix. 
 
-The application is a simple Node.js [Express 4](http://expressjs.com/) sample you can extend to implement your new offering today.
-The various stages of the pipeline may require ids, trials, or subscriptions to independent service offering.
-Each tool included an explanation of how to get and use IDs for each service.
+[DevOps](https://en.wikipedia.org/wiki/DevOps) is a methodology that aims to improve development and operational efficiencies while enhancing partnership with customers. DevOps is more than doing the same things faster; it establishes a delivery pipeline that spans from ideation to monitoring.  
 
-Create your new IBM DevOps project now!
+To start working from a DevOps approach, use the DevOps Tutorial Application project. You'll get a project in [IBM&reg; Bluemix&trade; DevOps Services](https://hub.jazz.net) that is built by using the latest tools, deployed to [IBM Bluemix](https://bluemix.net), and has the foundation for test, scalability, and operations.
 
+Use this sample application with a DevOps toolchain ([template](https://github.com/open-toolchain/cloud-native-toolchain-tutorial)) !
 
-## Build
-
-  - Use IDS to build.
-  - Use IBM DevOps Services projects to build and deploy the application to the IBM Bluemix platform
-  - Use GitHub for source control and code review
-  - Build and deploy to IBM Bluemix using the IDS pipeline and blue-green deployments on IBM Bluemix
-  - Use Slack integration for build notifications
-
-
-## Deploy
-
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/oneibmcloud/devops-tutorial-1.git)
-
-  - Edit the manifest.yml file in your ./bluemix directory.
-  - Your Bluemix pipeline will need to have a Build and Deploy phase.  
-  - The build phase should have a script that just does an `npm install`:
-
-  ```
-  #!/bin/bash
-  npm install
-  ```
-
-
-## Unit tests
-
-  - Use Karma and PhantomJS for unit testing
-  - [Use OSS Linting tools](docs/linters.md)
-
-
-## Performance & Scale tests
-
-  - Use Fastly to boost performance
-  - Use Load Impact for site load test
-  - Use [New Relic](docs/NewRelic.md) to monitor the site
-  - Use SpeedCurve for performance testing
-  - Use SauceLabs for functional testing
-
-
-## Accessing your api
-  You can use curl from your local machine or just go to any of these links from your browser
-
-  - https://[your-app-name].mybluemix.net/hello?name=joe - Get request to /hello with a query string parameter of 'name=joe'
-  - https://[your-app-name].mybluemix.net/applications/ - Get request to /applications/
-  - https://[your-app-name].mybluemix.net/applications/1234 - Get request to /applications/ with a path parameter of '1234'
-
-
-## Accessing your api using Swagger
-  - [Read the swagger instructions](docs/Swagger.md)
-
-
-## View the online documentation for your application
-  - https://[your-app-name].mybluemix.net/docs
-
-
-## References
-  - https://github.com/swagger-api/swagger-node
-  - http://robferguson.org/2015/06/06/build-your-microservices-api-with-swagger/
-  - https://community.apigee.com/questions/4877/getting-started-with-swagger-node-apigee-127-and-s.html
+###To get started, click this button:
+[![Create Toolchain](https://console.ng.bluemix.net/devops/graphics/create_toolchain_button.png)](https://new-console.ng.bluemix.net/devops/setup/deploy/?repository=https://github.com/open-toolchain/cloud-native-toolchain-tutorial)

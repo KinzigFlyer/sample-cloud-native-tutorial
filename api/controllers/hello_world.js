@@ -41,5 +41,6 @@ function hello(req, res) {
   var helloname = util.format('Hello, %s!', name);
 
   // this sends back a JSON response which is a single string
-  res.json(helloname);
+  //res.json(helloname);
+  res.send(helloname);
 }
